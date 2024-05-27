@@ -1,0 +1,10 @@
+{
+    "proto3 template": {
+        "scope": "proto3",
+        "prefix": "syntax = \"proto3\"",
+        "body": [
+            "syntax = \"proto3\";", "",
+            "option go_package = \"/api\";", "",
+        ]
+    }
+}

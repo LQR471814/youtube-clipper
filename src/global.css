@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .std-button {
+        @apply flex gap-2 p-2 rounded-lg border-2 transition-all
+            hover:shadow-lg active:translate-y-1;
+    }
+
+    .big-button {
+        @apply flex gap-2 font-semibold p-4 text-xl
+            rounded-full shadow-md bg-white transition-all
+            enabled:hover:bg-red-500 enabled:hover:text-white
+            enabled:hover:fill-white enabled:hover:scale-110 enabled:active:scale-90
+            disabled:text-neutral-700 disabled:fill-neutral-700;
+    }
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("/assets/Satoshi-Variable.woff");
+}
+
+@font-face {
+    font-family: "General Sans";
+    src: url("/assets/GeneralSans-Variable.woff");
+}
+
+html,
+body,
+main {
+    @apply h-full;
+}
+
+main {
+    font-family: "General Sans";
+    font-weight: 475;
+    @apply text-neutral-900;
+}

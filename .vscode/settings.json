@@ -1,0 +1,8 @@
+{
+    "protoc": {
+        "options": ["-I=proto"]
+    },
+    "[svelte][proto3]": {
+        "editor.tabSize": 2
+    },
+}
